@@ -1,0 +1,22 @@
+.hbtn:hover{
+    background-color: #262626;
+    color: #C27AFF;
+}
+.hbtnwh{
+    background-color: #262626;
+}
+.divhover{
+    background-color: #262626;
+}
+.divhover:hover link{
+    color: #C27AFF;
+}
+.logoImgSB{
+   filter: invert(1) brightness(1000%) contrast(1000%);
+}
+.lnk{
+    background-color: #0A66C1;
+}
+.homebtn:hover{
+    color: #C27AFF;
+}

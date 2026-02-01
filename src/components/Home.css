@@ -1,0 +1,82 @@
+.heroMB {
+  background-color: #C084FC;
+  animation: heroMBcolor 6.2s linear infinite;
+}
+
+@keyframes heroMBcolor {
+  /* Hold purple for ~5s */
+  0% {
+    background-color: #C084FC;
+  }
+  49% {
+    background-color: #C084FC;
+  }
+
+  /* Quick switch to yellow (0.1s approx) */
+  50% {
+    background-color: #FFC632;
+  }
+
+  /* Hold yellow for ~5s */
+  99% {
+    background-color: #FFC632;
+  }
+
+  /* Quick switch back */
+  100% {
+    background-color: #C084FC;
+  }
+}
+
+.typing {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+
+  width: 0;
+
+  /* 🔑 fixes */
+  vertical-align: baseline;
+  line-height: 1em;
+  box-sizing: content-box;
+  animation: typeLoop 10s steps(14, end) infinite;
+}
+
+@keyframes typeLoop {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 11ch;
+  }
+  80% {
+    width: 11ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.typing {
+  display: inline-flex;
+  align-items: baseline;
+}
+.blink{
+  opacity: 1;
+  animation: blink-anime 1s  ease-in-out  infinite alternate;
+}
+@keyframes blink-anime {
+  0%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
