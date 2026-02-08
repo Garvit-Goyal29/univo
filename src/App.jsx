@@ -15,7 +15,7 @@ function App() {
       <div className="hidden md:block md:w-1/5">
         <Sideb />
       </div>
-      <div className="w-full md:w-4/5 min-h-screen">
+      <div className="w-full md:w-4/5 h-full">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />

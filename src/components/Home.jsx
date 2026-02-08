@@ -80,7 +80,7 @@ function Home() {
                 </div>
 
                 {/* HERO SECTION */}
-                <div className="flex flex-col-reverse md:flex-row w-full items-center justify-between gap-10 mt-15">
+                <div className="flex flex-col md:flex-row w-full items-center justify-between gap-10 mt-15">
                     <div className="w-full text-center md:text-left md:pl-20">
                         <p className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight">
                             All{" "}
@@ -91,7 +91,8 @@ function Home() {
                         </p>
                     </div>
                     <div className="relative flex justify-center w-full md:pl-24">
-                        <div className="heroMB w-full h-32 sm:h-40 rounded-l-full"></div>
+                        {/* style={{ backgroundImage: `url(${heroM})`}} */}
+                        <div className="heroMB w-full hidden md:block h-32 sm:h-40 rounded-l-full bg-no-repeat bg-center bg-cover"></div>
                         <img
                             src={heroM}
                             alt=""
@@ -235,10 +236,8 @@ function Home() {
 
             </div>
 
-            <footer className="h-[45vh] md:h-[40vh] bg-[#171717] border-t border-neutral-800 flex flex-col justify-between">
-
-                {/* Top / Identity */}
-                <div className="flex flex-col items-center justify-center pt-2">
+            <footer className="h-full md:h-full bg-[#171717] border-t border-neutral-800 flex flex-col justify-between">
+                <div className="flex flex-col items-center justify-center">
                     <p className="text-white text-sm">
                         Made with <span className="text-red-500">❤️</span> by Garv
                     </p>
@@ -246,25 +245,25 @@ function Home() {
                         Learn • Build • Improve
                     </p>
                 </div>
-                
-                <div className="flex flex-col md:flex-row w-full h-[100%] justify-evenly p-5 text-sm text-gray-400">
-                    <div className="md:flex-col md:items-start md:justify-center px-3">
-                        <h3 className="text-white mb-2text-lg font-semibold">About</h3>
-                        <p className="">
+                <div className="flex flex-col md:flex-row w-full justify-evenly p-5 text-sm text-gray-400">
+                    <div className="w-[100%] md:w-[33%] h-full md:h-32 pb-10 flex flex-col items-start md:flex-col md:items-center md:justify-start px-3">
+                        <h3 className="text-white mb-2 text-lg font-semibold">About</h3>
+                        <p className="text-center">
                             B.Tech student building web applications using React & Tailwind CSS.
                         </p>
                     </div>
-                    <div className="md:flex-col md:items-start md:justify-center px-3">
+                    <div className="w-[100%] md:w-[33%] h-full md:h-32 pb-10 flex flex-col items-start md:items-center md:justify-start px-3">
                         <h3 className="text-white mb-2 text-lg font-semibold">Tech Stack</h3>
-                        <ul className="space-y-1">
+                        <ul className="space-y-1 text-start md:text-center">
                             <li><a href="https://react.dev/" className="hover:text-purple-300 transition">React</a></li>
                             <li><a href="https://vite.dev/" className="hover:text-purple-300 transition">Vite</a></li>
                             <li><a href="https://tailwindcss.com/" className="hover:text-purple-300 transition">Tailwind CSS</a></li>
+
                         </ul>
                     </div>
-                    <div className="md:flex-col md:items-start md:justify-center px-3 text-gray-400 text-sm">
+                    <div className="w-[100%] md:w-[33%] h-full md:h-32 flex flex-col md:items-center md:justify-start px-3 text-gray-400 text-sm">
                         <h3 className="text-white mb-2 text-lg font-semibold">Contact</h3>
-                        <p className="mb-1">
+                        <p className="text-start md:text-center">
                             Open to feedback, suggestions & opportunities
                         </p>
                         <p className="inline">Email : </p>
@@ -274,7 +273,7 @@ function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="border-t border-neutral-800 p-3 text-center text-xs text-white">
+                <div className="border-t border-neutral-800 py-1 text-center text-xs text-white">
                     © {new Date().getFullYear()} Garvit Goyal. All rights reserved.
                 </div>
 
